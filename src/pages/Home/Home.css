@@ -1,0 +1,94 @@
+/* Home.css */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('/src/assets/fundo7.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    pointer-events: none; /* Permite clicar nos elementos */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.content h1 span {
+    color: #00FFB3;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.buttons .btn,
+.buttons .btn-outline {
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buttons .btn {
+    background-color: #00FFB3;
+    color: #000;
+}
+
+.buttons .btn:hover {
+    background-color: #00cc8f;
+}
+
+.buttons .btn-outline {
+    border: 2px solid #00FFB3;
+    color: #00FFB3;
+}
+
+.buttons .btn-outline:hover {
+    background-color: #00FFB3;
+    color: #000;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #00FFB3;
+}
