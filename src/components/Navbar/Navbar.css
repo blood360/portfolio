@@ -22,9 +22,12 @@
     cursor: pointer;
 }
 
-.nav-links {
+.nav-links .nav-link.active {
     display: flex;
     gap: 2rem;
+    color: #00e676;
+    font-weight: bold;
+    border-bottom: 2px solid #00e676;
 }
 
 .nav-links li a {

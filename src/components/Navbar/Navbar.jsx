@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -11,31 +11,31 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Adriano</Link>
+        <NavLink to="/">Adriano <span>Santos</span></NavLink>
       </div>
-      <div className="menu-icon" onClick={toggleMenu}>
+      <div className="menu-icon" onClick={toggleMenu} end>
         {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </div>
       <ul className={menuOpen ? 'nav-links active' : 'nav-links'}>
         <li>
-          <Link to="/" onClick={toggleMenu}>
+          <NavLink to="/" onClick={toggleMenu} className="NavLink" end>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/sobre" onClick={toggleMenu}>
+          <NavLink to="/sobre" onClick={toggleMenu} className="NavLink">
             Sobre
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/projetos" onClick={toggleMenu}>
+          <NavLink to="/projetos" onClick={toggleMenu} className="NavLink">
             Projetos
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contato" onClick={toggleMenu}>
+          <NavLink to="/contato" onClick={toggleMenu} className="NavLink">
             Contato
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

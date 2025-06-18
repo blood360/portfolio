@@ -1,0 +1,103 @@
+.project-card {
+    display: flex;
+    flex-direction: column; /* Padrão para mobile */
+    align-items: center;
+    gap: 30px; /* Espaço entre texto e imagem */
+    margin-bottom: 60px; /* Espaço entre os cards de projeto */
+    padding: 20px;
+    background-color: #2a2a2a; /* Cor de fundo para o card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card.reverse {
+    flex-direction: column-reverse; /* Para inverter ordem em mobile */
+}
+
+.project-card .text-content {
+    flex: 1;
+    text-align: center; /* Centraliza o texto no mobile */
+}
+
+.project-card .text-content h3 {
+    color: #00e676; /* Cor verde vibrante para títulos */
+    margin-bottom: 10px;
+}
+
+.project-card .text-content p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card .text-content strong {
+    color: #fff;
+}
+
+.project-card .buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 15px;
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 20px;
+}
+
+.project-card .buttons .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.project-card .buttons .primary {
+    background-color: #00e676; /* Cor primária */
+    color: #1a1a1a;
+    border: 2px solid #00e676;
+}
+
+.project-card .buttons .primary:hover {
+    background-color: #00c853; /* Escurece no hover */
+}
+
+.project-card .buttons .secondary {
+    background-color: transparent;
+    color: #00e676; /* Cor primária na borda */
+    border: 2px solid #00e676;
+}
+
+.project-card .buttons .secondary:hover {
+    background-color: #00e676;
+    color: #1a1a1a;
+}
+
+.project-card .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Media query para telas maiores (desktop) */
+@media (min-width: 768px) {
+    .project-card {
+        flex-direction: row; /* Coloca imagem e texto lado a lado */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .project-card.reverse {
+        flex-direction: row-reverse; /* Inverte a ordem para imagem à direita */
+    }
+
+    .project-card .buttons {
+        justify-content: flex-start; /* Alinha botões à esquerda */
+    }
+}
