@@ -4,7 +4,7 @@ import './Projetos.css';
 
 // Importe as imagens diretamente para que o Vite/Webpack as processe corretamente
 import salaoImage from '../../assets/projeto-salao.png';
-import agendaImage from '../../assets/projeto-agenda.png';
+import agendaImage from '../../assets/Projeto-agenda.png';
 
 export default function Projetos() {
     // Crie um array de objetos com os dados dos seus projetos
