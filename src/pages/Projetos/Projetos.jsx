@@ -1,8 +1,7 @@
 import React from 'react';
-import ProjectCard from '../../components/ProjectCard/ProjectCard'; // Ajuste o caminho conforme sua estrutura
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import './Projetos.css';
 
-// Importe as imagens diretamente para que o Vite/Webpack as processe corretamente
 import salaoImage from '../../assets/projeto-salao.png';
 import agendaImage from '../../assets/Projeto-agenda.png';
 import inicioImage from '../../assets/inicio.png';

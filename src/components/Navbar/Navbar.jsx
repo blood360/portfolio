@@ -37,6 +37,11 @@ const Navbar = () => {
             Contato
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/login" onClick={toggleMenu} className="NavLink admin-link">
+            Área do Admin
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

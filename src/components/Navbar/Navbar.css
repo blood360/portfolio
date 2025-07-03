@@ -2,21 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 0.8rem 0.5rem; /* diminui o padding vertical (de 1.5rem pra 0.8rem) */
     background: #5e5c5c;
     color: #ffffff;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
+    box-sizing: border-box; /* garante que o padding não aumente o tamanho total */
 }
 
 .logo a {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* pode diminuir um pouco se quiser */
     font-weight: bold;
 }
 
+/* continua o restante igual */
 .menu-icon {
     display: none;
     cursor: pointer;

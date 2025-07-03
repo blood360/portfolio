@@ -1,0 +1,44 @@
+.admin-dashboard {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.admin-dashboard form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-dashboard label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.admin-dashboard input,
+.admin-dashboard textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.admin-dashboard button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-dashboard button:hover {
+  background-color: #019170;
+}
