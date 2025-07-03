@@ -5,6 +5,8 @@ import './Projetos.css';
 // Importe as imagens diretamente para que o Vite/Webpack as processe corretamente
 import salaoImage from '../../assets/projeto-salao.png';
 import agendaImage from '../../assets/Projeto-agenda.png';
+import inicioImage from '../../assets/inicio.png';
+import financeiroImage from '../../assets/financeiro.png';
 
 export default function Projetos() {
     // Crie um array de objetos com os dados dos seus projetos
@@ -28,6 +30,26 @@ export default function Projetos() {
             imageUrl: agendaImage,
             imageAlt: "Captura de tela da aplicação web Agenda Inteligente", // Alt text descritivo
             layout: 'reverse' // Se quiser alternar o layout
+        },
+        {
+            title: "Gerenciador de estoque",
+            description: "Aplicação para gerenciar o estoque de produtos, permitindo adicionar, remover e visualizar itens, e um PDV de vendas com descontos, juros do cartão de crédito e muito mais",
+            technologies: "Frontend(React, Node.js, Vite, React-Router-Dom, Axios, HTML, CSS, JavaScript), Backend(Node.js, Express, Node-PostgreSQL, JWT) Banco de dados (PostrageSQL, JWT)",
+            siteUrl: "https://",
+            codeUrl: "https://",
+            imageUrl: inicioImage,
+            imageAlt: "Captura de tela do gerenciador de estoque", 
+            layout: 'normal' 
+        },
+        {
+            title: "Controle financeiro",
+            description: "Sistema de contole financeiro que permite o registro de receitas e despesas, categorização de transações e geração de relatórios financeiros.",
+            technologies: "JavaScript, React, Node.js, Express, HTML, CSS",
+            siteUrl: "https://controle-de-gastos-tawny.vercel.app/login",
+            codeUrl: "https://github.com/blood360/controle-de-gastos",
+            imageUrl: financeiroImage,
+            imageAlt: "Captura de tela do controle financeiro",
+            layout: 'normal' 
         }
         // Adicione mais projetos aqui
     ];
