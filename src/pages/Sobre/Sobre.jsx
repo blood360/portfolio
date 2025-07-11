@@ -86,7 +86,7 @@ const Sobre = () => {
       <section className="about-section">
         <h1>Sobre mim</h1>
         <p>
-            Sou Adriano Santos, desenvolvedor Full-Stack apaixonado por tecnologia e inovação. Atualmente, curso Engenharia de Software e estou em constante aprimoramento com cursos extras, bootcamps e projetos próprios. Meu foco é entrgar soluções eficientes, escaláveis e que gerem valor real.
+            Sou Adriano Santos, desenvolvedor Full-Stack apaixonado por tecnologia e inovação. Atualmente, curso Engenharia de Software e estou em constante aprimoramento com cursos extras, bootcamps e projetos próprios. Meu foco é entregar soluções eficientes, escaláveis e que gerem valor real.
             Busco sempre evoluir tanto no front-end quanto no back-end, e estou aberto a oportunidades que me desafiem e ecelerem meu crescimento profissional.
         </p>
         <a href="/assets/Curriculo-adriano-engenharia" className="btn-download">Baixar Curriculo</a>
