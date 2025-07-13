@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import perfilImage from '../../assets/perfil.jpg'
 import "./Home.css";
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
             <div className="content">
                 <div className="foto-container">
                     <div className="glow-ring"></div>
-                    <img src="/src/assets/perfil.jpg" alt="minha foto" className="foto" />
+                    <img src={perfilImage} alt="minha foto" className="foto"/>
                 </div>
 
                 <div className="text-content">
